@@ -1,0 +1,74 @@
+#config_version=5
+#attract mode config file
+
+show_player:
+  mode_attract_started: 
+    Joust:
+      action: play
+
+shows:
+  color_on:
+  - time: 0  
+    lights:
+      (led): (color)
+  Joust:
+  - duration: 3
+    segment_displays:
+      neoSeg0:
+        text: "  I   "
+        transition:
+          type: push 
+      neoSeg1:
+        text: "01234567"
+        transition:
+          type: push
+      neoSeg2:
+        text: "01234567"
+        transition:
+          type: push
+      neoSeg3:
+        text: "01234567"
+        transition:
+          type: push
+      neoSeg4:
+        text: "01234567"
+        transition:
+          type: push
+
+
+  - duration: 3
+    segment_displays:
+      neoSeg0:
+        text: "HAVE  "
+        transition:
+          type: wipe 
+      neoSeg1:
+        text: "STEVEN"
+        transition:
+          type: push
+      neoSeg2:
+        text: "GUS"
+        transition:
+          type: push
+      neoSeg3:
+        text: "ROSA"
+        transition:
+          type: push
+      neoSeg4:
+        text: "BALL 1"
+        transition:
+          type: push
+
+  - duration: 3
+    segment_displays:
+      neoSeg0:
+        text: "THE   "
+        transition:
+          type: cover 
+
+  - duration: 5
+    segment_displays:
+      neoSeg0:
+        text: "POWER  "
+        transition:
+          type: split 
