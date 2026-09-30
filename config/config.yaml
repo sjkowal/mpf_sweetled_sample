@@ -7,9 +7,9 @@ hardware:
 
 opp:
   #Use the USB ports defined by your OS for the two STM32 boards
-  ports: /dev/ttyACM1
+  ports: /dev/ttyACM0
   chains:
-    0: /dev/ttyACM1
+    0: /dev/ttyACM0
   debug: true
 
 config:
@@ -19,12 +19,6 @@ config:
   - neoSeg_3.yaml
   - neoSeg_4.yaml
 
-switches:
-  s_left_flipper:
-    number: 0-0-1
-  s_right_flipper:
-    number: 0-0-2
-
 machine:
   balls_installed: 3
 
@@ -32,8 +26,4 @@ game:
   balls_per_game: 3
   max_players: 4
 
-keyboard:
-  z:
-    switch: s_left_flipper
-  "/":
-    switch: s_right_flipper
+
